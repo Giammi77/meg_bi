@@ -1,0 +1,100 @@
+.semaforo_bianco{
+    background: url(/_rsrc/pkg_bi/images/semaforo_bianco.png) no-repeat center center;
+    width: 100%;
+    height: 14px;
+    display: inline-block;
+}
+
+.semaforo_rosso{
+    background: url(/_rsrc/pkg_bi/images/semaforo_rosso.png) no-repeat center center;
+    width: 100%;
+    height: 14px;
+    display: inline-block;
+}
+
+.semaforo_giallo{
+    background: url(/_rsrc/pkg_bi/images/semaforo_giallo.png) no-repeat center center;
+    width: 100%;
+    height: 14px;
+    display: inline-block;
+}
+
+.semaforo_arancione{
+    background: url(/_rsrc/pkg_bi/images/semaforo_arancione.png) no-repeat center center;
+    width: 100%;
+    height: 14px;
+    display: inline-block;
+}
+
+.semaforo_verde{
+    background: url(/_rsrc/pkg_bi/images/semaforo_verde.png) no-repeat center center;
+    width: 100%;
+    height: 14px;
+    display: inline-block;
+}
+
+.semaforo_celeste{
+    background: url(/_rsrc/pkg_bi/images/semaforo_celeste.png) no-repeat center center;
+    width: 100%;
+    height: 14px;
+    display: inline-block;
+}
+
+.semaforo_celeste_scuro{
+    background: url(/_rsrc/pkg_bi/images/semaforo_celeste_scuro.png) no-repeat center center;
+    width: 100%;
+    height: 14px;
+    display: inline-block;
+}
+
+.semaforo_viola{
+    background: url(/_rsrc/pkg_bi/images/semaforo_viola.png) no-repeat center center;
+    width: 100%;
+    height: 14px;
+    display: inline-block;
+}
+
+.semaforo_grigio{
+    background: url(/_rsrc/pkg_bi/images/semaforo_grigio.png) no-repeat center center;
+    width: 100%;
+    height: 14px;
+    display: inline-block;
+}
+
+.rigaNera {
+    /* background-color: rgba(68, 207, 25, 0.13) !important; */
+    color:rgb(64, 64, 64)
+}
+.rigaVerde {
+    /* background-color: rgba(68, 207, 25, 0.13) !important; */
+    color:green
+}
+.rigaGrigia {
+    /* background-color: rgba(68, 207, 25, 0.13) !important; */
+    color:rgb(172, 172, 172)
+}
+.rigaCeleste {
+    /* background-color: rgba(80, 185, 218, 0.13) !important; */
+    color:dodgerblue
+}
+
+.rigaArancione {
+    /* background-color: rgba(236, 126, 24, 0.13) !important; */
+    color:darkorange
+}
+
+.rigaGialla {
+    /* background-color: rgba(236, 126, 24, 0.13) !important; */
+    color:mediumorchid
+}
+
+.rigaBianca {
+    background-color: rgba(255, 255, 255, 0.13) !important;
+}
+
+.tundra._common_d11 .dojoxGrid-row.dojoxGrid-row-selected{
+    background-color: #AFCBEC;
+}
+.tundra._common_d11 .dojoxGrid-row-selected.dojoxGrid-row-odd{
+    background-color: #AFCBEC;
+}
