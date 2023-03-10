@@ -11,4 +11,8 @@ class Package(GnrDboPackage):
         pass
         
 class Table(GnrDboTable):
-    pass
+
+    def pippo(self):
+        print('pippo')
+        
+    

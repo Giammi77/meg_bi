@@ -4,6 +4,8 @@
 	<packages>
 		<gnrcore_sys pkgcode="gnrcore:sys"/>
 		<gnrcore_adm pkgcode="gnrcore:adm"/>
+		<gnrcore_test pkgcode="gnrcore:test"/>
+		<gnr_it_glbl pkgcode="gnr_it:glbl"/>
 		<bi/>
 	</packages>
 	<authentication pkg="gnrcore:sys">
@@ -12,5 +14,4 @@
 	<site>
 		<wsgi mainpackage="bi"/>
 	</site>
-	<menu package="*"/>
 </GenRoBag>
