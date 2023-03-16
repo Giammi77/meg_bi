@@ -25,7 +25,7 @@ class Form(BaseComponent):
 
     def th_form(self, form):
         bc = form.center.borderContainer()
-        self.tipoFileTestata(bc.contentPane(region='top', datapath='.record', height='150px'))
+        self.tipoFileTestata(bc.contentPane(region='top',splitter=True, datapath='.record', height='30%'))
 
         tab = bc.tabContainer(region='center', margin='2px')
         tab.contentPane(title='Parametri').inlineTableHandler(relation='@parametro_file',datapath='#FORM.parametri', viewResource='ViewFromTipoFile',configurable=True)    
@@ -40,6 +40,7 @@ class Form(BaseComponent):
         fb.field('tblinfo_tblid', condition="$pkgid='bi'", 
                         validate_notnull=True, hasDownArrow=True)
         fb.field('str_validazione_row' )
+        fb.field('is_xml' )
 
     def th_options(self):
         return dict(dialog_height='400px', dialog_width='600px')

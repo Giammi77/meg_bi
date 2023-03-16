@@ -26,6 +26,8 @@ class ViewFromTipoFile(View):
         r.fieldcell('i_low_slice',edit=True)
         r.fieldcell('i_high_slice',edit=True)
         r.fieldcell('name_field',edit=True)
+        r.fieldcell('header_parametro',edit=True)
+        r.fieldcell('dtype',edit=True)
 
 
 class Form(BaseComponent):
