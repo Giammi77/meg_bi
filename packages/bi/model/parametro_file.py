@@ -12,4 +12,5 @@ class Table(object):
         tbl.column('i_high_slice', dtype='I', name_long='Indice maggiore per slice')
         tbl.column('name_field', name_long='Nome campo')
         tbl.column('dtype', name_long='Tipo campo')
+        tbl.column('datapath', name_long='Datapath')
 #  intestazione=[('ABI',39,44),('CAB',45,50),('DATA BONIFICO',22,30),('CODICE FISCALE',49,65)]       

@@ -28,6 +28,7 @@ class ViewFromTipoFile(View):
         r.fieldcell('name_field',edit=True)
         r.fieldcell('header_parametro',edit=True)
         r.fieldcell('dtype',edit=True)
+        r.fieldcell('datapath',edit=True)
 
 
 class Form(BaseComponent):
@@ -39,6 +40,10 @@ class Form(BaseComponent):
         fb.field('parametro')
         fb.field('i_low_slice')
         fb.field('i_high_slice')
+        fb.field('name_field')
+        fb.field('header_parametro')
+        fb.field('dtype')
+        fb.field('datapath')
 
 
     def th_options(self):

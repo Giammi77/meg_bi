@@ -328,3 +328,10 @@ def dateFromStrig(date_str=None, pattern='%d/%m/%Y'):
     '18/10/1977'
     dt = date_str[:10]
     return datetime.strptime(dt, pattern).date()
+
+def getAbiCab_fromIban(iban):
+    if not iban:
+        return None,None
+    abi= iban[5:10]
+    cab= iban[10:15]
+    return abi,cab

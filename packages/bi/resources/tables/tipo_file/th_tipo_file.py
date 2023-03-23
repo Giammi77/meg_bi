@@ -9,8 +9,14 @@ class View(BaseComponent):
     def th_struct(self,struct):
         r = struct.view().rows()
         r.fieldcell('codice')
-        r.fieldcell('descrizione')
-        r.fieldcell('note')
+        r.fieldcell('descrizione',width='25em')
+        r.fieldcell('note',width='15em')
+        r.fieldcell('tblinfo_tblid')
+        r.fieldcell('str_validazione_row')
+        r.fieldcell('drop_first',width='4em')
+        r.fieldcell('drop_last',width='4em')
+        r.fieldcell('is_xml',width='4em')
+        r.fieldcell('is_json',width='4em')
 
     def th_order(self):
         return 'codice'
@@ -25,7 +31,7 @@ class Form(BaseComponent):
 
     def th_form(self, form):
         bc = form.center.borderContainer()
-        self.tipoFileTestata(bc.contentPane(region='top',splitter=True, datapath='.record', height='30%'))
+        self.tipoFileTestata(bc.contentPane(region='top',splitter=True, datapath='.record', height='32%'))
 
         tab = bc.tabContainer(region='center', margin='2px')
         tab.contentPane(title='Parametri').inlineTableHandler(relation='@parametro_file',datapath='#FORM.parametri', viewResource='ViewFromTipoFile',configurable=True)    
@@ -40,6 +46,8 @@ class Form(BaseComponent):
         fb.field('tblinfo_tblid', condition="$pkgid='bi'", 
                         validate_notnull=True, hasDownArrow=True)
         fb.field('str_validazione_row' )
+        fb.field('drop_first' )
+        fb.field('drop_last' )
         fb.field('is_xml' )
 
     def th_options(self):
